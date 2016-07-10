@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */; };
+		5BBB4D231D32C4DC00BA26EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* ViewController.swift */; };
+		5BBB4D261D32C4DC00BA26EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D241D32C4DC00BA26EA /* Main.storyboard */; };
+		5BBB4D281D32C4DC00BA26EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */; };
+		5BBB4D2B1D32C4DC00BA26EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D291D32C4DC00BA26EA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BBB4D221D32C4DC00BA26EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BBB4D251D32C4DC00BA26EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BBB4D2A1D32C4DC00BA26EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BBB4D2C1D32C4DC00BA26EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BBB4D1A1D32C4DC00BA26EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BBB4D141D32C4DC00BA26EA = {
+			isa = PBXGroup;
+			children = (
+				5BBB4D1F1D32C4DC00BA26EA /* PilotFishEmitter */,
+				5BBB4D1E1D32C4DC00BA26EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BBB4D1E1D32C4DC00BA26EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BBB4D1F1D32C4DC00BA26EA /* PilotFishEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */,
+				5BBB4D221D32C4DC00BA26EA /* ViewController.swift */,
+				5BBB4D241D32C4DC00BA26EA /* Main.storyboard */,
+				5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */,
+				5BBB4D291D32C4DC00BA26EA /* LaunchScreen.storyboard */,
+				5BBB4D2C1D32C4DC00BA26EA /* Info.plist */,
+			);
+			path = PilotFishEmitter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BBB4D1C1D32C4DC00BA26EA /* PilotFishEmitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BBB4D2F1D32C4DC00BA26EA /* Build configuration list for PBXNativeTarget "PilotFishEmitter" */;
+			buildPhases = (
+				5BBB4D191D32C4DC00BA26EA /* Sources */,
+				5BBB4D1A1D32C4DC00BA26EA /* Frameworks */,
+				5BBB4D1B1D32C4DC00BA26EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PilotFishEmitter;
+			productName = PilotFishEmitter;
+			productReference = 5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BBB4D151D32C4DC00BA26EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Phonations;
+				TargetAttributes = {
+					5BBB4D1C1D32C4DC00BA26EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BBB4D181D32C4DC00BA26EA /* Build configuration list for PBXProject "PilotFishEmitter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BBB4D141D32C4DC00BA26EA;
+			productRefGroup = 5BBB4D1E1D32C4DC00BA26EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BBB4D1C1D32C4DC00BA26EA /* PilotFishEmitter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BBB4D1B1D32C4DC00BA26EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBB4D2B1D32C4DC00BA26EA /* LaunchScreen.storyboard in Resources */,
+				5BBB4D281D32C4DC00BA26EA /* Assets.xcassets in Resources */,
+				5BBB4D261D32C4DC00BA26EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BBB4D191D32C4DC00BA26EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBB4D231D32C4DC00BA26EA /* ViewController.swift in Sources */,
+				5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BBB4D241D32C4DC00BA26EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBB4D251D32C4DC00BA26EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BBB4D291D32C4DC00BA26EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBB4D2A1D32C4DC00BA26EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BBB4D2D1D32C4DC00BA26EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BBB4D2E1D32C4DC00BA26EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BBB4D301D32C4DC00BA26EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PilotFishEmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5BBB4D311D32C4DC00BA26EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PilotFishEmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BBB4D181D32C4DC00BA26EA /* Build configuration list for PBXProject "PilotFishEmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBB4D2D1D32C4DC00BA26EA /* Debug */,
+				5BBB4D2E1D32C4DC00BA26EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BBB4D2F1D32C4DC00BA26EA /* Build configuration list for PBXNativeTarget "PilotFishEmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBB4D301D32C4DC00BA26EA /* Debug */,
+				5BBB4D311D32C4DC00BA26EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BBB4D151D32C4DC00BA26EA /* Project object */;
+}
