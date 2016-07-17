@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,20 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q13-Tm-ADq">
-                                <rect key="frame" x="251" y="124" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q13-Tm-ADq">
+                                <rect key="frame" x="28" y="113" width="535.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g72-Ur-tKA">
-                                <rect key="frame" x="251" y="184" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g72-Ur-tKA">
+                                <rect key="frame" x="28" y="188" width="535.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-1a-Q54">
-                                <rect key="frame" x="204" y="309" width="93" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-1a-Q54">
+                                <rect key="frame" x="28" y="272" width="544" height="30"/>
                                 <state key="normal" title="Locate"/>
                                 <connections>
                                     <action selector="locate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7p3-83-fT3"/>
@@ -39,10 +40,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g72-Ur-tKA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AbF-R1-h3a"/>
-                            <constraint firstItem="q13-Tm-ADq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qkj-z5-FaG"/>
-                            <constraint firstItem="q13-Tm-ADq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U1r-DA-OPI"/>
-                            <constraint firstItem="g72-Ur-tKA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gdc-AC-wn8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g72-Ur-tKA" secondAttribute="trailing" constant="16.5" id="1lx-K0-CL4"/>
+                            <constraint firstItem="vKR-1a-Q54" firstAttribute="top" secondItem="g72-Ur-tKA" secondAttribute="bottom" constant="63" id="AB1-BH-bS0"/>
+                            <constraint firstItem="q13-Tm-ADq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="ADm-0j-JG7"/>
+                            <constraint firstItem="g72-Ur-tKA" firstAttribute="top" secondItem="q13-Tm-ADq" secondAttribute="bottom" constant="54" id="Fve-Z1-9OF"/>
+                            <constraint firstItem="vKR-1a-Q54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OSp-pC-jyw"/>
+                            <constraint firstItem="g72-Ur-tKA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PiX-X8-ai7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vKR-1a-Q54" secondAttribute="trailing" constant="8" id="UCG-Xg-7FZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q13-Tm-ADq" secondAttribute="trailing" constant="16.5" id="aoO-Yf-Vi4"/>
+                            <constraint firstItem="q13-Tm-ADq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="csf-hU-CXL"/>
                         </constraints>
                     </view>
                     <connections>
