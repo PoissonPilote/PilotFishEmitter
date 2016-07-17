@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        if !CLLocationManager.locationServicesEnabled() {
+            // location services is disabled, alert user
+            let servicesDisabledAlert = UIAlertView.init(title: "DisabledTitle", message: "DisabledMessage", delegate: nil, cancelButtonTitle: "Ok")
+            servicesDisabledAlert.show()
+        }
         return true
     }
 
