@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MobileViewController.swift
 //  PilotFishEmitter
 //
 //  Created by Martin Delille on 10/07/2016.
@@ -9,18 +9,30 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class MobileViewController: UIViewController {
 
-    var locationManager: CLLocationManager? = nil
+    var localizer: Localizer?
 
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.locationManager = CLLocationManager()
+
+        self.localizer = Localizer()
+
+//        if !CLLocationManager.locationServicesEnabled() {
+//            let alert = UIAlertController(title: "No localization", message: "You need to activate localization", preferredStyle: .Alert);
+//
+//            let defaultAction = UIAlertAction.init(title: "Ok", style: .Default, handler: { (action) in
+//            })
+//
+//            alert.addAction(defaultAction)
+//            self.presentViewController(alert, animated: true, completion: nil)
+//        }
     }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,13 +43,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let lm = self.locationManager {
             lm.delegate = self
             lm.desiredAccuracy = kCLLocationAccuracyBest
+            print("startUpdatingLocation")
             lm.startUpdatingLocation()
         }
-    }
-
-    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-        self.longitudeLabel.text = String(newLocation.coordinate.longitude)
-        self.latitudeLabel.text = String(newLocation.coordinate.latitude)
     }
 }
 

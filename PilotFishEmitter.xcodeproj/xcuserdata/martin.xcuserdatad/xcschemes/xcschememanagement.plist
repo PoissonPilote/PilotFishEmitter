@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PilotFishEmitterOSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5B0A123A1D4A3BFA00992DD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B0A124A1D4A3BFA00992DD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B0A12551D4A3BFA00992DD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5BBB4D1C1D32C4DC00BA26EA</key>
 		<dict>
 			<key>primary</key>

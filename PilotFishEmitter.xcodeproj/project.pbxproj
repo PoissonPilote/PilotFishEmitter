@@ -7,18 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0A123E1D4A3BFA00992DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A123D1D4A3BFA00992DD5 /* AppDelegate.swift */; };
+		5B0A12401D4A3BFA00992DD5 /* DesktopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A123F1D4A3BFA00992DD5 /* DesktopViewController.swift */; };
+		5B0A12421D4A3BFA00992DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0A12411D4A3BFA00992DD5 /* Assets.xcassets */; };
+		5B0A12451D4A3BFA00992DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0A12431D4A3BFA00992DD5 /* Main.storyboard */; };
+		5B0A12501D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A124F1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.swift */; };
+		5B0A125B1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */; };
+		5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
+		5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
 		5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */; };
-		5BBB4D231D32C4DC00BA26EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* ViewController.swift */; };
+		5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */; };
 		5BBB4D261D32C4DC00BA26EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D241D32C4DC00BA26EA /* Main.storyboard */; };
 		5BBB4D281D32C4DC00BA26EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */; };
 		5BBB4D2B1D32C4DC00BA26EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D291D32C4DC00BA26EA /* LaunchScreen.storyboard */; };
 		5BBB4D331D32C5D200BA26EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBB4D321D32C5D200BA26EA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B0A124C1D4A3BFA00992DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBB4D151D32C4DC00BA26EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0A123A1D4A3BFA00992DD5;
+			remoteInfo = PilotFishEmitterOSX;
+		};
+		5B0A12571D4A3BFA00992DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBB4D151D32C4DC00BA26EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0A123A1D4A3BFA00992DD5;
+			remoteInfo = PilotFishEmitterOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5B0A123B1D4A3BFA00992DD5 /* PilotFishEmitterOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitterOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0A123D1D4A3BFA00992DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B0A123F1D4A3BFA00992DD5 /* DesktopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopViewController.swift; sourceTree = "<group>"; };
+		5B0A12411D4A3BFA00992DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B0A12441D4A3BFA00992DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B0A12461D4A3BFA00992DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0A124B1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilotFishEmitterOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0A124F1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotFishEmitterOSXTests.swift; sourceTree = "<group>"; };
+		5B0A12511D4A3BFA00992DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0A12561D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilotFishEmitterOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotFishEmitterOSXUITests.swift; sourceTree = "<group>"; };
+		5B0A125C1D4A3BFA00992DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0A12681D4A3EF400992DD5 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
 		5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BBB4D221D32C4DC00BA26EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
 		5BBB4D251D32C4DC00BA26EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BBB4D2A1D32C4DC00BA26EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +65,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B0A12381D4A3BFA00992DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12481D4A3BFA00992DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12531D4A3BFA00992DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB4D1A1D32C4DC00BA26EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,11 +97,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5BBB4D141D32C4DC00BA26EA = {
+		5B0A123C1D4A3BFA00992DD5 /* PilotFishEmitterOSX */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A123D1D4A3BFA00992DD5 /* AppDelegate.swift */,
+				5B0A123F1D4A3BFA00992DD5 /* DesktopViewController.swift */,
+				5B0A12411D4A3BFA00992DD5 /* Assets.xcassets */,
+				5B0A12431D4A3BFA00992DD5 /* Main.storyboard */,
+				5B0A12461D4A3BFA00992DD5 /* Info.plist */,
+			);
+			path = PilotFishEmitterOSX;
+			sourceTree = "<group>";
+		};
+		5B0A124E1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A124F1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.swift */,
+				5B0A12511D4A3BFA00992DD5 /* Info.plist */,
+			);
+			path = PilotFishEmitterOSXTests;
+			sourceTree = "<group>";
+		};
+		5B0A12591D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */,
+				5B0A125C1D4A3BFA00992DD5 /* Info.plist */,
+			);
+			path = PilotFishEmitterOSXUITests;
+			sourceTree = "<group>";
+		};
+		5B0A12661D4A3EA700992DD5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A12681D4A3EF400992DD5 /* Localizer.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5B0A12671D4A3EB300992DD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5BBB4D321D32C5D200BA26EA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BBB4D141D32C4DC00BA26EA = {
+			isa = PBXGroup;
+			children = (
 				5BBB4D1F1D32C4DC00BA26EA /* PilotFishEmitter */,
+				5B0A123C1D4A3BFA00992DD5 /* PilotFishEmitterOSX */,
+				5B0A124E1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests */,
+				5B0A12591D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests */,
+				5B0A12661D4A3EA700992DD5 /* Shared */,
+				5B0A12671D4A3EB300992DD5 /* Frameworks */,
 				5BBB4D1E1D32C4DC00BA26EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */,
+				5B0A123B1D4A3BFA00992DD5 /* PilotFishEmitterOSX.app */,
+				5B0A124B1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.xctest */,
+				5B0A12561D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */,
-				5BBB4D221D32C4DC00BA26EA /* ViewController.swift */,
+				5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */,
 				5BBB4D241D32C4DC00BA26EA /* Main.storyboard */,
 				5BBB4D271D32C4DC00BA26EA /* Assets.xcassets */,
 				5BBB4D291D32C4DC00BA26EA /* LaunchScreen.storyboard */,
@@ -71,6 +183,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B0A123A1D4A3BFA00992DD5 /* PilotFishEmitterOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0A125D1D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSX" */;
+			buildPhases = (
+				5B0A12371D4A3BFA00992DD5 /* Sources */,
+				5B0A12381D4A3BFA00992DD5 /* Frameworks */,
+				5B0A12391D4A3BFA00992DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PilotFishEmitterOSX;
+			productName = PilotFishEmitterOSX;
+			productReference = 5B0A123B1D4A3BFA00992DD5 /* PilotFishEmitterOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B0A124A1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0A12601D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXTests" */;
+			buildPhases = (
+				5B0A12471D4A3BFA00992DD5 /* Sources */,
+				5B0A12481D4A3BFA00992DD5 /* Frameworks */,
+				5B0A12491D4A3BFA00992DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B0A124D1D4A3BFA00992DD5 /* PBXTargetDependency */,
+			);
+			name = PilotFishEmitterOSXTests;
+			productName = PilotFishEmitterOSXTests;
+			productReference = 5B0A124B1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B0A12551D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0A12631D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXUITests" */;
+			buildPhases = (
+				5B0A12521D4A3BFA00992DD5 /* Sources */,
+				5B0A12531D4A3BFA00992DD5 /* Frameworks */,
+				5B0A12541D4A3BFA00992DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B0A12581D4A3BFA00992DD5 /* PBXTargetDependency */,
+			);
+			name = PilotFishEmitterOSXUITests;
+			productName = PilotFishEmitterOSXUITests;
+			productReference = 5B0A12561D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		5BBB4D1C1D32C4DC00BA26EA /* PilotFishEmitter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBB4D2F1D32C4DC00BA26EA /* Build configuration list for PBXNativeTarget "PilotFishEmitter" */;
@@ -98,6 +263,17 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Phonations;
 				TargetAttributes = {
+					5B0A123A1D4A3BFA00992DD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5B0A124A1D4A3BFA00992DD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5B0A123A1D4A3BFA00992DD5;
+					};
+					5B0A12551D4A3BFA00992DD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5B0A123A1D4A3BFA00992DD5;
+					};
 					5BBB4D1C1D32C4DC00BA26EA = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -117,11 +293,37 @@
 			projectRoot = "";
 			targets = (
 				5BBB4D1C1D32C4DC00BA26EA /* PilotFishEmitter */,
+				5B0A123A1D4A3BFA00992DD5 /* PilotFishEmitterOSX */,
+				5B0A124A1D4A3BFA00992DD5 /* PilotFishEmitterOSXTests */,
+				5B0A12551D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B0A12391D4A3BFA00992DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0A12421D4A3BFA00992DD5 /* Assets.xcassets in Resources */,
+				5B0A12451D4A3BFA00992DD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12491D4A3BFA00992DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12541D4A3BFA00992DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB4D1B1D32C4DC00BA26EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,18 +337,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B0A12371D4A3BFA00992DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */,
+				5B0A12401D4A3BFA00992DD5 /* DesktopViewController.swift in Sources */,
+				5B0A123E1D4A3BFA00992DD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12471D4A3BFA00992DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0A12501D4A3BFA00992DD5 /* PilotFishEmitterOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0A12521D4A3BFA00992DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0A125B1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBB4D191D32C4DC00BA26EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BBB4D231D32C4DC00BA26EA /* ViewController.swift in Sources */,
+				5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */,
+				5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */,
 				5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5B0A124D1D4A3BFA00992DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0A123A1D4A3BFA00992DD5 /* PilotFishEmitterOSX */;
+			targetProxy = 5B0A124C1D4A3BFA00992DD5 /* PBXContainerItemProxy */;
+		};
+		5B0A12581D4A3BFA00992DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0A123A1D4A3BFA00992DD5 /* PilotFishEmitterOSX */;
+			targetProxy = 5B0A12571D4A3BFA00992DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		5B0A12431D4A3BFA00992DD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B0A12441D4A3BFA00992DD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		5BBB4D241D32C4DC00BA26EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +416,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B0A125E1D4A3BFA00992DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5B0A125F1D4A3BFA00992DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5B0A12611D4A3BFA00992DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PilotFishEmitterOSX.app/Contents/MacOS/PilotFishEmitterOSX";
+			};
+			name = Debug;
+		};
+		5B0A12621D4A3BFA00992DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PilotFishEmitterOSX.app/Contents/MacOS/PilotFishEmitterOSX";
+			};
+			name = Release;
+		};
+		5B0A12641D4A3BFA00992DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = PilotFishEmitterOSX;
+			};
+			name = Debug;
+		};
+		5B0A12651D4A3BFA00992DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PilotFishEmitterOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = PilotFishEmitterOSX;
+			};
+			name = Release;
+		};
 		5BBB4D2D1D32C4DC00BA26EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +618,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B0A125D1D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0A125E1D4A3BFA00992DD5 /* Debug */,
+				5B0A125F1D4A3BFA00992DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B0A12601D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0A12611D4A3BFA00992DD5 /* Debug */,
+				5B0A12621D4A3BFA00992DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B0A12631D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0A12641D4A3BFA00992DD5 /* Debug */,
+				5B0A12651D4A3BFA00992DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5BBB4D181D32C4DC00BA26EA /* Build configuration list for PBXProject "PilotFishEmitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -292,6 +658,7 @@
 				5BBB4D311D32C4DC00BA26EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
