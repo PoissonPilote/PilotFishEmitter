@@ -8,6 +8,7 @@
 
 import Cocoa
 import CoreLocation
+import Alamofire
 
 class DesktopViewController: NSViewController {
 
@@ -33,6 +34,23 @@ class DesktopViewController: NSViewController {
             print(coordinate)
             self.longitudeLabel.stringValue = String(coordinate.longitude)
             self.latitudeLabel.stringValue = String(coordinate.latitude)
+
+            let user = self.userTextField.stringValue
+            let password = self.passwordTextField.stringValue
+
+            let parameters = [
+                "x": 1,
+                "y": 2,
+            ]
+
+            Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/path", parameters: parameters)
+                .authenticate(user: user, password: password)
+                .responseJSON(completionHandler: { (response) in
+                    print(response.request)  // original URL request
+                    print(response.response) // URL response
+                    print(response.data)     // server data
+                    print(response.result)   // result of response serialization
+                })
         }
     }
 }
