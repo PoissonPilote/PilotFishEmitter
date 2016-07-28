@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import CoreLocation
 
 class MobileViewController: UIViewController {
 
-    var localizer: Localizer?
+    var localizer = Localizer()
 
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
@@ -19,17 +18,15 @@ class MobileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.localizer = Localizer()
+        if !self.localizer.enabled {
+            let alert = UIAlertController(title: "No localization", message: "You need to activate localization", preferredStyle: .Alert);
 
-//        if !CLLocationManager.locationServicesEnabled() {
-//            let alert = UIAlertController(title: "No localization", message: "You need to activate localization", preferredStyle: .Alert);
-//
-//            let defaultAction = UIAlertAction.init(title: "Ok", style: .Default, handler: { (action) in
-//            })
-//
-//            alert.addAction(defaultAction)
-//            self.presentViewController(alert, animated: true, completion: nil)
-//        }
+            let defaultAction = UIAlertAction.init(title: "Ok", style: .Default, handler: { (action) in
+            })
+
+            alert.addAction(defaultAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
 
 
@@ -40,11 +37,9 @@ class MobileViewController: UIViewController {
     }
 
     @IBAction func locate(sender: AnyObject) {
-        if let lm = self.locationManager {
-            lm.delegate = self
-            lm.desiredAccuracy = kCLLocationAccuracyBest
-            print("startUpdatingLocation")
-            lm.startUpdatingLocation()
+        self.localizer.locate { (coordinate) in
+            self.longitudeLabel.text = String(coordinate.longitude)
+            self.latitudeLabel.text = String(coordinate.latitude)
         }
     }
 }

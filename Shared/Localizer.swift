@@ -22,6 +22,10 @@ class Localizer: NSObject, CLLocationManagerDelegate {
         self.locationManager.delegate = self
     }
 
+    var enabled: Bool {
+        return CLLocationManager.locationServicesEnabled()
+    }
+
     func locate(onSuccess: LocationHandler) {
         onLocationSuccess = onSuccess
         self.locationManager.startUpdatingLocation()

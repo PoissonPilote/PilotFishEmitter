@@ -11,9 +11,11 @@ import CoreLocation
 
 class DesktopViewController: NSViewController {
 
+    @IBOutlet weak var userTextField: NSTextField!
+    @IBOutlet weak var passwordTextField: NSTextField!
     @IBOutlet weak var longitudeLabel: NSTextField!
     @IBOutlet weak var latitudeLabel: NSTextField!
-    
+
     var localizer = Localizer()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class DesktopViewController: NSViewController {
 
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 
