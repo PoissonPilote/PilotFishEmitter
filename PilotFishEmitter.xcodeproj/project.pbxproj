@@ -15,6 +15,7 @@
 		5B0A125B1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */; };
 		5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
 		5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
+		5BABC3431D4A6739006DCB35 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BABC3421D4A6739006DCB35 /* Alamofire.framework */; };
 		5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */; };
 		5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */; };
 		5BBB4D261D32C4DC00BA26EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D241D32C4DC00BA26EA /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotFishEmitterOSXUITests.swift; sourceTree = "<group>"; };
 		5B0A125C1D4A3BFA00992DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0A12681D4A3EF400992DD5 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		5BABC3421D4A6739006DCB35 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BABC3431D4A6739006DCB35 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +141,7 @@
 		5B0A12671D4A3EB300992DD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BABC3421D4A6739006DCB35 /* Alamofire.framework */,
 				5BBB4D321D32C5D200BA26EA /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -276,6 +280,11 @@
 					};
 					5BBB4D1C1D32C4DC00BA26EA = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -422,8 +431,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = PilotFishEmitterOSX/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,8 +450,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = PilotFishEmitterOSX/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phonations.PilotFishEmitterOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -625,6 +642,7 @@
 				5B0A125F1D4A3BFA00992DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B0A12601D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +651,7 @@
 				5B0A12621D4A3BFA00992DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B0A12631D4A3BFA00992DD5 /* Build configuration list for PBXNativeTarget "PilotFishEmitterOSXUITests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +660,7 @@
 				5B0A12651D4A3BFA00992DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BBB4D181D32C4DC00BA26EA /* Build configuration list for PBXProject "PilotFishEmitter" */ = {
 			isa = XCConfigurationList;
