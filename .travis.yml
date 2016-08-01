@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode7.3
+matrix:
+  include:
+    - env: SCHEME="PilotFishEmitterOSX"
+      xcode_sdk: macosx10.11
+#    - env: SCHEME="Bartleby iOS"
+#      xcode_sdk: iphonesimulator
+script:
+  - carthage update --platform Mac
+  -  set -o pipefail && xcodebuild -project PilotFishEmitter.xcodeproj -scheme "$SCHEME" -sdk $TRAVIS_XCODE_SDK build test | xcpretty
+
+notifications:
+  email: false
