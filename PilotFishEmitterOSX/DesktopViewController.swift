@@ -17,15 +17,10 @@ class DesktopViewController: NSViewController {
     @IBOutlet weak var longitudeLabel: NSTextField!
     @IBOutlet weak var latitudeLabel: NSTextField!
 
-    var localizer = Localizer()
+    let localizer = Localizer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override var representedObject: AnyObject? {
-        didSet {
-            // Update the view, if already loaded.
-        }
     }
 
     @IBAction func locate(sender: AnyObject) {
@@ -39,11 +34,12 @@ class DesktopViewController: NSViewController {
             let password = self.passwordTextField.stringValue
 
             let parameters = [
-                "x": 1,
-                "y": 2,
+                "x": coordinate.longitude,
+                "y": coordinate.latitude,
             ]
 
             Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/path", parameters: parameters)
+                .validate(contentType: ["application/json"])
                 .authenticate(user: user, password: password)
                 .responseJSON(completionHandler: { (response) in
                     print(response.request)  // original URL request
