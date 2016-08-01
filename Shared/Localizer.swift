@@ -20,6 +20,7 @@ class Localizer: NSObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
 
     var enabled: Bool {
@@ -40,7 +41,7 @@ class Localizer: NSObject, CLLocationManagerDelegate {
     }
 
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("Failed: \(error)")
+        print("Failed: \(error.localizedDescription)")
     }
 
 
