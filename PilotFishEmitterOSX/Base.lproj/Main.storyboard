@@ -735,7 +735,6 @@
                     </view>
                     <connections>
                         <outlet property="latitudeLabel" destination="iu7-yE-vWn" id="tcw-6r-Ncc"/>
-                        <outlet property="latitudeView" destination="iu7-yE-vWn" id="LTe-S8-vtN"/>
                         <outlet property="longitudeLabel" destination="vur-U9-wDz" id="2rC-N9-vrT"/>
                         <outlet property="passwordTextField" destination="Ic7-Ik-aqg" id="ILc-qD-nVu"/>
                         <outlet property="userTextField" destination="1Z4-cn-mos" id="lFJ-v3-Cwg"/>
