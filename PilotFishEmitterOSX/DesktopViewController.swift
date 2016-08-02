@@ -34,8 +34,8 @@ class DesktopViewController: NSViewController {
             let password = self.passwordTextField.stringValue
 
             let parameters = [
-                "x": coordinate.longitude,
-                "y": coordinate.latitude,
+                "x": coordinate.latitude,
+                "y": coordinate.longitude,
             ]
 
             Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/path", parameters: parameters)
