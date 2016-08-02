@@ -18,6 +18,7 @@ class DesktopViewController: NSViewController {
     @IBOutlet weak var latitudeLabel: NSTextField!
 
     let localizer = Localizer()
+    var packets = [Packet]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,8 @@ class DesktopViewController: NSViewController {
                 "x": coordinate.latitude,
                 "y": coordinate.longitude,
             ]
+
+            self.packets.append(Packet(x: coordinate.latitude, y: coordinate.longitude))
 
             Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/path", parameters: parameters)
                 .validate(contentType: ["application/json"])

@@ -15,6 +15,8 @@
 		5B0A125B1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */; };
 		5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
 		5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
+		5B0B1B371D5113EA00876BC8 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B1B361D5113EA00876BC8 /* Packet.swift */; };
+		5B0B1B381D5113EA00876BC8 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B1B361D5113EA00876BC8 /* Packet.swift */; };
 		5BABC3431D4A6739006DCB35 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BABC3421D4A6739006DCB35 /* Alamofire.framework */; };
 		5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */; };
 		5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */; };
@@ -55,6 +57,7 @@
 		5B0A125A1D4A3BFA00992DD5 /* PilotFishEmitterOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotFishEmitterOSXUITests.swift; sourceTree = "<group>"; };
 		5B0A125C1D4A3BFA00992DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0A12681D4A3EF400992DD5 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		5B0B1B361D5113EA00876BC8 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
 		5BABC3421D4A6739006DCB35 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0A12681D4A3EF400992DD5 /* Localizer.swift */,
+				5B0B1B361D5113EA00876BC8 /* Packet.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -353,6 +357,7 @@
 				5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */,
 				5B0A12401D4A3BFA00992DD5 /* DesktopViewController.swift in Sources */,
 				5B0A123E1D4A3BFA00992DD5 /* AppDelegate.swift in Sources */,
+				5B0B1B381D5113EA00876BC8 /* Packet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +384,7 @@
 				5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */,
 				5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */,
 				5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */,
+				5B0B1B371D5113EA00876BC8 /* Packet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
