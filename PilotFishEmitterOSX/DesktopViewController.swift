@@ -9,6 +9,7 @@
 import Cocoa
 import CoreLocation
 import Alamofire
+import RealmSwift
 
 class DesktopViewController: NSViewController {
 
@@ -18,10 +19,13 @@ class DesktopViewController: NSViewController {
     @IBOutlet weak var latitudeLabel: NSTextField!
 
     let localizer = Localizer()
+    var realm: Realm? = nil
     var packets = [Packet]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.realm = Realm?()
     }
 
     @IBAction func locate(sender: AnyObject) {
@@ -31,15 +35,23 @@ class DesktopViewController: NSViewController {
             self.longitudeLabel.stringValue = String(coordinate.longitude)
             self.latitudeLabel.stringValue = String(coordinate.latitude)
 
-            let user = self.userTextField.stringValue
-            let password = self.passwordTextField.stringValue
+//            let user = slf.userTextField.stringValue
+//            let password = self.passwordTextField.stringValue
+            let user = "boat-1"
+            let password = "aquingooR4yooneizuwuDeekohj7zi"
 
             let parameters = [
                 "x": coordinate.latitude,
                 "y": coordinate.longitude,
             ]
 
-            self.packets.append(Packet(x: coordinate.latitude, y: coordinate.longitude))
+            do {
+                try self.realm?.write {
+                    self.packets.append(Packet(x: coordinate.latitude, y: coordinate.longitude))
+                }
+            } catch {
+                print("\(error)")
+            }
 
             Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/path", parameters: parameters)
                 .validate(contentType: ["application/json"])
