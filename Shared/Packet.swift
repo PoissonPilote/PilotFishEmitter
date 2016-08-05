@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import Realm
-import RealmSwift
+//import Realm
+//import RealmSwift
 
-class Packet: Object {
+class Packet/*: Object*/ {
     var x: Double?
     var y: Double?
     var depth: Double?
@@ -19,20 +19,19 @@ class Packet: Object {
     var published = false
 
     required init(x: Double? = nil, y: Double? = nil) {
-        super.init()
         self.x = x
         self.y = y
     }
     
-    required init(value: AnyObject, schema: RLMSchema) {
-        fatalError("init(value:schema:) has not been implemented")
-    }
-    
-    required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
-    }
-    
-    required init() {
-        super.init()
-    }
+//    required init(value: AnyObject, schema: RLMSchema) {
+//        fatalError("init(value:schema:) has not been implemented")
+//    }
+//    
+//    required init(realm: RLMRealm, schema: RLMObjectSchema) {
+//        fatalError("init(realm:schema:) has not been implemented")
+//    }
+//    
+//    required init() {
+//        super.init()
+//    }
 }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+//import RealmSwift
 
 class Pool: Object {
     dynamic var user = ""

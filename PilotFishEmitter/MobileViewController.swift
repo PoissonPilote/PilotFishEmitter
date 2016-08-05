@@ -11,6 +11,7 @@ import UIKit
 class MobileViewController: UIViewController {
 
     var localizer = Localizer()
+    let communicator = Communicator()
 
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
@@ -40,6 +41,8 @@ class MobileViewController: UIViewController {
         self.localizer.locate { (coordinate) in
             self.longitudeLabel.text = String(coordinate.longitude)
             self.latitudeLabel.text = String(coordinate.latitude)
+
+            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude)
         }
     }
 }

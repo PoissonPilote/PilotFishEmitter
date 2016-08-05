@@ -21,8 +21,8 @@ class Localizer: NSObject, CLLocationManagerDelegate {
         super.init()
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        self.locationManager.requestLocation()
-//        locationManager.requestWhenInUseAuthorization()
+        //        self.locationManager.requestLocation()
+        //        locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
     }
 
@@ -37,7 +37,11 @@ class Localizer: NSObject, CLLocationManagerDelegate {
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-        print("locations: \(locations)")
+        print(locations.last)
+        if let handler = onLocationSuccess, let location = locations.last {
+            handler(location.coordinate)
+        }
+        self.locationManager.stopUpdatingLocation()
     }
 
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -50,21 +54,18 @@ class Localizer: NSObject, CLLocationManagerDelegate {
         locationManager.requestLocation()
     }
 
-//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        print(locations)
-//    }
 
-//    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-//        print(newLocation)
-//        if let handler = onLocationSuccess {
-//            handler(newLocation.coordinate)
-//        }
-//        self.locationManager.stopUpdatingLocation()
-//    }
+    //    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+    //        print(newLocation)
+    //        if let handler = onLocationSuccess {
+    //            handler(newLocation.coordinate)
+    //        }
+    //        self.locationManager.stopUpdatingLocation()
+    //    }
 
-//    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-//        print("Failed: \(error.localizedDescription)")
-//    }
-
-
+    //    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    //        print("Failed: \(error.localizedDescription)")
+    //    }
+    
+    
 }
