@@ -12,7 +12,8 @@ import Alamofire
 class Communicator {
 
 
-    func send(longitude: Double, latitude: Double) {
+    func send(longitude: Double, latitude: Double, depth: Double, paddle: Int) {
+        print("send")
         //            let user = self.userTextField.stringValue
         //            let password = self.passwordTextField.stringValue
         let user = "boat-1"
@@ -22,23 +23,30 @@ class Communicator {
         let parameters: [String: AnyObject] = [
             "boat-1": [
                 "x": latitude,
-                "y": longitude
+                "y": longitude,
+                                "depth": depth,
             ],
+                        "paddle": paddle,
             "datetime": dateISO8601
         ]
 
 
-        Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/datum", parameters: parameters)
+        let request = Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/datum", parameters: parameters)
             .validate(contentType: ["application/json"])
             .authenticate(user: user, password: password)
-            .responseJSON(completionHandler: { (response) in
-                if let body = response.request?.HTTPBody {
-                    print("request: \(NSString(data: body, encoding:NSUTF8StringEncoding))")  // original URL request
-                }
-                print("response: \(response.response)") // URL response
-                print("data: \(response.data)")     // server data
-                print("result: \(response.result)")   // result of response serialization
-            })
-            
+
+//        if let body = request.request?.HTTPBody, let bodyString = NSString(data: body, encoding: NSUTF8StringEncoding).stringByRemovingPercentEncoding {
+//            print("request before: \(bodyString)")  // original URL request
+//        }
+
+        request.responseJSON(completionHandler: { (response) in
+//            if let body = response.request?.HTTPBody {
+//                print("request after: \(NSString(data: body, encoding:NSUTF8StringEncoding).stringByRemovingPercentEncoding)")  // original URL request
+//            }
+            print("response: \(response.response)") // URL response
+            print("data: \(response.data)")     // server data
+            print("result: \(response.result)")   // result of response serialization
+        })
+        
     }
 }

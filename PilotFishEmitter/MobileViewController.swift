@@ -28,6 +28,7 @@ class MobileViewController: UIViewController {
             alert.addAction(defaultAction)
             self.presentViewController(alert, animated: true, completion: nil)
         }
+        self.locate(self)
     }
 
 
@@ -42,7 +43,7 @@ class MobileViewController: UIViewController {
             self.longitudeLabel.text = String(coordinate.longitude)
             self.latitudeLabel.text = String(coordinate.latitude)
 
-            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude)
+            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0)
         }
     }
 }
