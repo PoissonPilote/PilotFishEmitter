@@ -14,10 +14,6 @@ class Communicator {
 
     func send(longitude: Double, latitude: Double, depth: Double, paddle: Int) {
         print("send")
-        //            let user = self.userTextField.stringValue
-        //            let password = self.passwordTextField.stringValue
-        let user = "boat-1"
-        let password = "aquingooR4yooneizuwuDeekohj7zi"
 
         let dateISO8601: String = NSDate.ISOStringFromDate(NSDate())
         let parameters: [String: AnyObject] = [
@@ -33,7 +29,7 @@ class Communicator {
 
         let request = Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/datum", parameters: parameters)
             .validate(contentType: ["application/json"])
-            .authenticate(user: user, password: password)
+            .authenticate(user: Configuration.user, password: Configuration.password)
 
 //        if let body = request.request?.HTTPBody, let bodyString = NSString(data: body, encoding: NSUTF8StringEncoding).stringByRemovingPercentEncoding {
 //            print("request before: \(bodyString)")  // original URL request

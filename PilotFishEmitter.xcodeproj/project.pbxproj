@@ -24,6 +24,8 @@
 		5B86335A1D54767900D445BD /* NSDataISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8633581D54767900D445BD /* NSDataISO8601.swift */; };
 		5B8633611D547A6800D445BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8633521D54752900D445BD /* Alamofire.framework */; };
 		5B8633621D547A6800D445BD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8633521D54752900D445BD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B8633651D54E39400D445BD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8633641D54E39400D445BD /* Configuration.swift */; };
+		5B8633661D54E39400D445BD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8633641D54E39400D445BD /* Configuration.swift */; };
 		5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */; };
 		5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */; };
 		5BBB4D261D32C4DC00BA26EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB4D241D32C4DC00BA26EA /* Main.storyboard */; };
@@ -82,6 +84,7 @@
 		5B8633521D54752900D445BD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5B8633541D54754200D445BD /* Communicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
 		5B8633581D54767900D445BD /* NSDataISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataISO8601.swift; sourceTree = "<group>"; };
+		5B8633641D54E39400D445BD /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5BBB4D1D1D32C4DC00BA26EA /* PilotFishEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotFishEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB4D201D32C4DC00BA26EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBB4D221D32C4DC00BA26EA /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 				5B0B1B361D5113EA00876BC8 /* Packet.swift */,
 				5B0B1B3D1D515E3900876BC8 /* Pool.swift */,
 				5B8633541D54754200D445BD /* Communicator.swift */,
+				5B8633641D54E39400D445BD /* Configuration.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -395,6 +399,7 @@
 				5B8633511D5474F400D445BD /* Packet.swift in Sources */,
 				5B0A123E1D4A3BFA00992DD5 /* AppDelegate.swift in Sources */,
 				5B86335A1D54767900D445BD /* NSDataISO8601.swift in Sources */,
+				5B8633661D54E39400D445BD /* Configuration.swift in Sources */,
 				5B0B1B3F1D515E3900876BC8 /* Pool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +426,7 @@
 			files = (
 				5B8633551D54754200D445BD /* Communicator.swift in Sources */,
 				5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */,
+				5B8633651D54E39400D445BD /* Configuration.swift in Sources */,
 				5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */,
 				5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */,
 				5B8633501D5474F200D445BD /* Packet.swift in Sources */,
