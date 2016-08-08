@@ -16,6 +16,7 @@ class MobileViewController: UIViewController {
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var humorTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,8 @@ class MobileViewController: UIViewController {
             self.latitudeLabel.text = String(coordinate.latitude)
 
             self.stateLabel.text = "send"
-            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0, humor: "Fine", callback: { (info) in
+            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0, humor: self.humorTextField.text, callback: { (info) in
+                self.humorTextField.text = nil
                 self.stateLabel.text = info
             })
         }

@@ -15,20 +15,22 @@ typealias CommunicatorHandler = (_: String) -> ()
 class Communicator {
 
 
-    func send(longitude: Double, latitude: Double, depth: Double, paddle: Int, humor: String, callback: CommunicatorHandler) {
+    func send(longitude: Double, latitude: Double, depth: Double, paddle: Int, humor: String?, callback: CommunicatorHandler) {
         print("send")
 
         let dateISO8601: String = NSDate.ISOStringFromDate(NSDate())
-        let parameters: [String: AnyObject] = [
+        var parameters: [String: AnyObject] = [
             "boat-1": [
                 "x": latitude,
                 "y": longitude,
                 "depth": depth,
             ],
             "paddle": paddle,
-            "humor": humor,
             "datetime": dateISO8601
         ]
+        if let humor = humor {
+            parameters["humor"] = humor
+        }
 
 
         let request = Alamofire.request(.POST, "http://www.projetpoissonpilote.com/api/datum", parameters: parameters)
