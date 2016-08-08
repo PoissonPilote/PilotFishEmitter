@@ -37,16 +37,25 @@
                                     <action selector="locate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7p3-83-fT3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="starting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tw-1i-PWm">
+                                <rect key="frame" x="28" y="351" width="544" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="g72-Ur-tKA" secondAttribute="trailing" constant="16.5" id="1lx-K0-CL4"/>
+                            <constraint firstItem="1tw-1i-PWm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="6gb-7a-PVT"/>
                             <constraint firstItem="vKR-1a-Q54" firstAttribute="top" secondItem="g72-Ur-tKA" secondAttribute="bottom" constant="63" id="AB1-BH-bS0"/>
                             <constraint firstItem="q13-Tm-ADq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="ADm-0j-JG7"/>
+                            <constraint firstItem="1tw-1i-PWm" firstAttribute="top" secondItem="vKR-1a-Q54" secondAttribute="bottom" constant="49" id="DtP-oo-FEX"/>
                             <constraint firstItem="g72-Ur-tKA" firstAttribute="top" secondItem="q13-Tm-ADq" secondAttribute="bottom" constant="54" id="Fve-Z1-9OF"/>
                             <constraint firstItem="vKR-1a-Q54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OSp-pC-jyw"/>
                             <constraint firstItem="g72-Ur-tKA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PiX-X8-ai7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vKR-1a-Q54" secondAttribute="trailing" constant="8" id="UCG-Xg-7FZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1tw-1i-PWm" secondAttribute="trailing" constant="8" id="XZ5-pa-xDY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q13-Tm-ADq" secondAttribute="trailing" constant="16.5" id="aoO-Yf-Vi4"/>
                             <constraint firstItem="q13-Tm-ADq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="csf-hU-CXL"/>
                         </constraints>
@@ -54,6 +63,7 @@
                     <connections>
                         <outlet property="latitudeLabel" destination="g72-Ur-tKA" id="svc-gE-w4d"/>
                         <outlet property="longitudeLabel" destination="q13-Tm-ADq" id="1dI-pW-aer"/>
+                        <outlet property="stateLabel" destination="1tw-1i-PWm" id="bUs-ab-q2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

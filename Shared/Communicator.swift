@@ -9,10 +9,13 @@
 import Foundation
 import Alamofire
 
+
+typealias CommunicatorHandler = (_: String) -> ()
+
 class Communicator {
 
 
-    func send(longitude: Double, latitude: Double, depth: Double, paddle: Int) {
+    func send(longitude: Double, latitude: Double, depth: Double, paddle: Int, humor: String, callback: CommunicatorHandler) {
         print("send")
 
         let dateISO8601: String = NSDate.ISOStringFromDate(NSDate())
@@ -20,9 +23,10 @@ class Communicator {
             "boat-1": [
                 "x": latitude,
                 "y": longitude,
-                                "depth": depth,
+                "depth": depth,
             ],
-                        "paddle": paddle,
+            "paddle": paddle,
+            "humor": humor,
             "datetime": dateISO8601
         ]
 
@@ -31,17 +35,20 @@ class Communicator {
             .validate(contentType: ["application/json"])
             .authenticate(user: Configuration.user, password: Configuration.password)
 
-//        if let body = request.request?.HTTPBody, let bodyString = NSString(data: body, encoding: NSUTF8StringEncoding).stringByRemovingPercentEncoding {
-//            print("request before: \(bodyString)")  // original URL request
-//        }
+        //        if let body = request.request?.HTTPBody, let bodyString = NSString(data: body, encoding: NSUTF8StringEncoding).stringByRemovingPercentEncoding {
+        //            print("request before: \(bodyString)")  // original URL request
+        //        }
 
         request.responseJSON(completionHandler: { (response) in
-//            if let body = response.request?.HTTPBody {
-//                print("request after: \(NSString(data: body, encoding:NSUTF8StringEncoding).stringByRemovingPercentEncoding)")  // original URL request
-//            }
-            print("response: \(response.response)") // URL response
-            print("data: \(response.data)")     // server data
-            print("result: \(response.result)")   // result of response serialization
+            //            if let body = response.request?.HTTPBody {
+            //                print("request after: \(NSString(data: body, encoding:NSUTF8StringEncoding).stringByRemovingPercentEncoding)")  // original URL request
+            //            }
+            if let response = response.response {
+                print("response: \(response)") // URL response
+                callback("Success")
+            } else {
+                callback("Failed")
+            }
         })
         
     }

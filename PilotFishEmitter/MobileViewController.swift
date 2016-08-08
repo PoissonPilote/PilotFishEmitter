@@ -15,6 +15,7 @@ class MobileViewController: UIViewController {
 
     @IBOutlet weak var longitudeLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +40,15 @@ class MobileViewController: UIViewController {
     }
 
     @IBAction func locate(sender: AnyObject) {
+        self.stateLabel.text = "locate"
         self.localizer.locate { (coordinate) in
             self.longitudeLabel.text = String(coordinate.longitude)
             self.latitudeLabel.text = String(coordinate.latitude)
 
-            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0)
+            self.stateLabel.text = "send"
+            self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0, humor: "Fine", callback: { (info) in
+                self.stateLabel.text = info
+            })
         }
     }
 }
