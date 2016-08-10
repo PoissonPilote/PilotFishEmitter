@@ -43,8 +43,8 @@ class MobileViewController: UIViewController {
     @IBAction func locate(sender: AnyObject) {
         self.stateLabel.text = "locate"
         self.localizer.locate { (coordinate) in
-            self.longitudeLabel.text = String(coordinate.longitude)
-            self.latitudeLabel.text = String(coordinate.latitude)
+            self.longitudeLabel.text = coordinate.longitude.degreeFormat
+            self.latitudeLabel.text = coordinate.latitude.degreeFormat
 
             self.stateLabel.text = "send"
             self.communicator.send(coordinate.longitude, latitude: coordinate.latitude, depth: 0, paddle: 0, humor: self.humorTextField.text, callback: { (info) in

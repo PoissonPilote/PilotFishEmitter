@@ -16,6 +16,8 @@
 		5B0A12691D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
 		5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A12681D4A3EF400992DD5 /* Localizer.swift */; };
 		5B0B1B3F1D515E3900876BC8 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B1B3D1D515E3900876BC8 /* Pool.swift */; };
+		5B48EDBF1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48EDBE1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift */; };
+		5B48EDC01D58BF300049C4B9 /* CLLocationDegrees+DegreeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48EDBE1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift */; };
 		5B8633501D5474F200D445BD /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B1B361D5113EA00876BC8 /* Packet.swift */; };
 		5B8633511D5474F400D445BD /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B1B361D5113EA00876BC8 /* Packet.swift */; };
 		5B8633551D54754200D445BD /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8633541D54754200D445BD /* Communicator.swift */; };
@@ -81,6 +83,7 @@
 		5B0A12681D4A3EF400992DD5 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
 		5B0B1B361D5113EA00876BC8 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
 		5B0B1B3D1D515E3900876BC8 /* Pool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		5B48EDBE1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationDegrees+DegreeFormat.swift"; sourceTree = "<group>"; };
 		5B8633521D54752900D445BD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5B8633541D54754200D445BD /* Communicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
 		5B8633581D54767900D445BD /* NSDataISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataISO8601.swift; sourceTree = "<group>"; };
@@ -185,8 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				5B8633581D54767900D445BD /* NSDataISO8601.swift */,
+				5B48EDBE1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift */,
 			);
-			name = extensions;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		5BBB4D141D32C4DC00BA26EA = {
@@ -393,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B48EDC01D58BF300049C4B9 /* CLLocationDegrees+DegreeFormat.swift in Sources */,
 				5B8633561D54754200D445BD /* Communicator.swift in Sources */,
 				5B0A126A1D4A3EF400992DD5 /* Localizer.swift in Sources */,
 				5B0A12401D4A3BFA00992DD5 /* DesktopViewController.swift in Sources */,
@@ -430,6 +435,7 @@
 				5BBB4D231D32C4DC00BA26EA /* MobileViewController.swift in Sources */,
 				5BBB4D211D32C4DC00BA26EA /* AppDelegate.swift in Sources */,
 				5B8633501D5474F200D445BD /* Packet.swift in Sources */,
+				5B48EDBF1D58BEBF0049C4B9 /* CLLocationDegrees+DegreeFormat.swift in Sources */,
 				5B8633591D54767900D445BD /* NSDataISO8601.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
